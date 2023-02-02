@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+
+    <div class="whole-card">
+      <div class="search-section">
+        <div class="search">
+          <input class="search-bar" type="text" placeholder="Enter a City" />
+        </div>
+        <div class="search-button-div">
+          <button class="search-button">
+            <img
+              class="search-icon"
+              src="other-icons/search-icon.svg"
+              alt="search-button"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="city">Dallas</p>
+        <p class="current-time" id="current-time">12:00:00 AM</p>
+
+        <div class="main-temp">
+          <p class="feels-like" id="fc">Feels Like</p>
+          <p class="current-temp">85˚F</p>
+          <p class="clear-sky" id="fc">Sunny</p>
+        </div>
+
+        <div id="b-left">
+          <div class="high-low" id="indv-stats">
+            <img
+              class="weather-icons"
+              src="left-icons/thermometer-icon.svg"
+              alt="thermometer-icon"
+            />
+            <p class="high-low-temp" id="details">
+              <span class="high">85</span>˚/<span class="low">75</span>˚
+            </p>
+          </div>
+
+          <div class="wind" id="indv-stats">
+            <img
+              class="weather-icons"
+              src="left-icons/windy-icon.svg"
+              alt="windy-icon"
+            />
+            <p class="wind-speed" id="details">10 mph</p>
+          </div>
+
+          <div class="humidity" id="indv-stats">
+            <img
+              class="weather-icons"
+              src="left-icons/humidity-icon.svg"
+              alt="humidity-icon"
+            />
+            <p class="humidity-number" id="details">95%</p>
+          </div>
+
+          <div class="visibility" id="indv-stats">
+            <img
+              class="weather-icons"
+              src="left-icons/visibility-icon.svg"
+              alt="visibility-icon"
+            />
+            <p class="visibility-percent" id="details">9 mi</p>
+          </div>
+        </div>
+        <!-- <div class="units">
+          <div class="unit-class" id="unit-f">
+            <p id="Fahrenheit" class="unit">˚F</p>
+          </div>
+          <div class="divider"></div>
+          <div class="unit-class">
+            <p id="Celsius" class="unit">˚C</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
